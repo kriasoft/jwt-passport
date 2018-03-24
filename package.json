@@ -1,8 +1,9 @@
 {
   "name": "jwt-passport",
   "description": "Passport.js framework that uses JWT for sessions",
-  "version": "0.0.1",
-  "main": "lib/index.js",
+  "version": "0.0.2",
+  "repository": "kriasoft/jwt-passport",
+  "bugs": "https://github.com/kriasoft/jwt-passport/issues",
   "author": "Kriasoft <hello@kriasoft.com> (https://github.com/kriasoft)",
   "contributors": [
     "Konstantin Tarkus <hello@tarkus.me> (https://github.com/koistya)"
@@ -26,6 +27,7 @@
     "login"
   ],
   "files": ["lib"],
+  "main": "lib/index.js",
   "dependencies": {
     "cookie": "^0.3.1",
     "jsonwebtoken": "^8.2.0",

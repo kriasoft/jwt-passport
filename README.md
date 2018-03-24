@@ -29,11 +29,11 @@ passport.framework(
   jwt({
     name: '__session',
     secret: '<secret>',
-    audience: '<autidence>',
+    audience: '<audience>',
     issuer: '<issuer>',
     expiresIn: '1 hour',
 
-    // Prepare the payload for a JWT token
+    // Prepare payload for an ID token
     createToken: req => ({
       sub: req.user.id,
       jti: uuid.v4(),
@@ -94,6 +94,7 @@ app.get('/login/:provider/return', (req, res, next) => {
 
 ## Related Projects
 
+* [Passport.js][passport] — Simple, unobtrusive authentication for Node.js.
 * [Node.js API Starter][nsk] — Boilerplate for authoring GraphQL APIs with Node.js and PostgreSQL
 * [React Starter Kit][rsk] — Boilerpalte for authoring isomorphic web apps with React.js and GraphQL
 * [React Starter Kit for Firebase][rskfb] — React.js web app boilerplate for serveless architecture
@@ -103,6 +104,7 @@ app.get('/login/:provider/return', (req, res, next) => {
 Copyright © 2018-present Kriasoft. This source code is licensed under the MIT
 [license][lic].
 
+[passport]: https://github.com/jaredhanson/passport
 [nsk]: https://github.com/kriasoft/nodejs-api-starter
 [rsk]: https://github.com/kriasoft/react-starter-kit
 [rskfb]: https://github.com/kriasoft/react-firebase-starter
